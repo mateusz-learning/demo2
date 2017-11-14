@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="PostgreSQL - mateuszdb@localhost" uuid="d3595c0c-8fbf-4764-8ab0-07cb1065dc13">
+      <secret-storage>master_key</secret-storage>
+      <user-name>mateusz</user-name>
+      <schema-pattern>mateuszdb.pg_catalog mateuszdb.public</schema-pattern>
+      <default-schemas>mateuszdb.pg_catalog mateuszdb.public</default-schemas>
+    </data-source>
+  </component>
+</project>

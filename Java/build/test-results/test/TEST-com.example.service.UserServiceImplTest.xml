@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.service.UserServiceImplTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-10-27T14:45:37" hostname="/0:0:0:0:0:0:0:1%lo" time="0.056">
+  <properties/>
+  <testcase name="shouldReturnStringWithUserAndHisOneAccommodation" classname="com.example.service.UserServiceImplTest" time="0.05"/>
+  <testcase name="shouldReturnStringWithUserAndHisTwoAccommodations" classname="com.example.service.UserServiceImplTest" time="0.001"/>
+  <testcase name="shouldReturnStringWithUserAndWithoutAccommodations" classname="com.example.service.UserServiceImplTest" time="0.0"/>
+  <testcase name="shouldReturnStringWithErrorMessageWhenUserDoesNotExist" classname="com.example.service.UserServiceImplTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

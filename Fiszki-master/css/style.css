@@ -1,0 +1,35 @@
+.modal-footer {
+    border-top: 0px;
+}
+
+.przyklad {
+    font-size: 22px;
+}
+
+#slowo_polskie {
+    display: block;
+}
+
+#slowo_obce {
+    display: none;
+}
+
+#pokaz_odpowiedz {
+    display: block;
+}
+
+#pokaz_odpowiedz button {
+    width: 60%;
+}
+
+#wiem_nie_wiem {
+    display: none;
+}
+
+#wiem_nie_wiem button {
+    width: 30%;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+}

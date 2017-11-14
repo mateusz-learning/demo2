@@ -1,0 +1,84 @@
+buildscript {
+    ext {
+        springBootVersion = '1.5.8.RELEASE'
+        validationApiVersion = '2.0.0.Final'
+        hibernateVersion = '5.2.12.Final'
+        hibernateValidatorVersion = '6.0.3.Final'
+        liquibaseVersion = '1.2.4'
+        postgresqlVersion = '42.1.4'
+        h2Version = '1.4.196'
+        junitVersion = '4.12'
+        assertjCoreVersion = '3.8.0'
+        mockitoversion = '2.9.0'
+        apacheCommonsCollections4Version = '4.1'
+        apacheCommonsLang3Version = '3.6'
+        apacheCommonsTextVersion = '1.1'
+        lombokVersion = '1.16.18'
+        aptVersion = '0.12'
+        buildPropertiesVersion = '0.3'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath "org.liquibase:liquibase-gradle-plugin:${liquibaseVersion}"
+        classpath "org.postgresql:postgresql:${postgresqlVersion}"
+        classpath "net.ltgt.gradle:gradle-apt-plugin:${aptVersion}"
+        classpath "com.novoda:gradle-build-properties-plugin:${buildPropertiesVersion}"
+    }
+}
+
+plugins {
+    id "net.ltgt.apt" version "0.12"
+}
+
+group 'test'
+version '1.0-SNAPSHOT'
+ext['hibernate.version'] = hibernateVersion
+
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'org.liquibase.gradle'
+apply plugin: "net.ltgt.apt"
+apply plugin: 'com.novoda.build-properties'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter', version: springBootVersion
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: springBootVersion
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: apacheCommonsLang3Version
+    compile group: 'org.apache.commons', name: 'commons-collections4', version: apacheCommonsCollections4Version
+    compile group: 'javax.validation', name: 'validation-api', version: validationApiVersion
+    compile group: 'org.hibernate', name: 'hibernate-validator', version: hibernateValidatorVersion
+    compile group: 'org.projectlombok', name: 'lombok', version: lombokVersion
+    compile group: 'org.apache.commons', name: 'commons-text', version: apacheCommonsTextVersion
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: springBootVersion
+    testCompile group: 'org.assertj', name: 'assertj-core', version: assertjCoreVersion
+    testCompile group: 'org.mockito', name: 'mockito-core', version: mockitoversion
+    testCompile group: 'com.h2database', name: 'h2', version: h2Version
+    runtime group: 'org.postgresql', name: 'postgresql', version: postgresqlVersion
+    apt group: 'org.hibernate', name: 'hibernate-jpamodelgen', version: hibernateVersion
+    apt group: 'org.projectlombok', name: 'lombok', version: lombokVersion
+}
+
+buildProperties {
+    secrets {
+        file project.file('src/main/resources/application.properties')
+    }
+}
+
+liquibase {
+    activities {
+        main {
+            changeLogFile 'src/main/resources/changelog.xml'
+            url 'jdbc:postgresql://localhost:5432/mateuszdb'
+            driver 'org.postgresql.Driver'
+            username buildProperties.secrets['spring.datasource.username'].string
+            password buildProperties.secrets['spring.datasource.password'].string
+        }
+    }
+}

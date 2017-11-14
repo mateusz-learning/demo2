@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.example.dao.UserDaoImplTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.example.dao.UserDaoImplTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.dao.html">com.example.dao</a> &gt; UserDaoImplTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">17</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">5.199s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">shouldReturnEmptyListWhenGivenParametersDoesNotMatchToAnyUser</td>
+<td>0.383s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldReturnEmptyOptionalWhenGivenEmailDoesNotMatch</td>
+<td>0.394s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldReturnListOfUsersWhenAllParametersAreGiven</td>
+<td>0.282s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldReturnListOfUsersWhenAllParametersAreNulls</td>
+<td>0.284s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldReturnListOfUsersWhenGivenStringIsEmpty</td>
+<td>0.310s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldReturnListOfUsersWhenGivenStringIsNull</td>
+<td>0.315s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldReturnListOfUsersWhenMaximumDateIsEdgeCase</td>
+<td>0.319s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldReturnListOfUsersWhenMaximumDateIsNull</td>
+<td>0.299s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldReturnListOfUsersWhenMinimumDateAndMaximumDateAreNulls</td>
+<td>0.345s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldReturnListOfUsersWhenMinimumDateIsEdgeCase</td>
+<td>0.268s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldReturnListOfUsersWhenMinimumDateIsGreaterThanMaximumDate</td>
+<td>0.265s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldReturnListOfUsersWhenMinimumDateIsNull</td>
+<td>0.306s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldReturnListOfUsersWhenStringParameterContainsLowerCaseAndUpperCaseLetters</td>
+<td>0.256s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldReturnListOfUsersWhenUsernameContainsGivenString</td>
+<td>0.306s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldReturnListOfUsersWithGivenGender</td>
+<td>0.291s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldReturnListWithUserWhenUsernameIsTheSameAsGivenString</td>
+<td>0.275s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldReturnProperUserWhenGivenEmailExists</td>
+<td>0.301s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2017-10-27 16:45:44.967  INFO 17698 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.dao.UserDaoImplTest], using SpringBootContextLoader
+2017-10-27 16:45:44.968  INFO 17698 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.dao.UserDaoImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-10-27 16:45:44.968  INFO 17698 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.dao.UserDaoImplTest]: UserDaoImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2017-10-27 16:45:44.969  INFO 17698 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.Main for test class com.example.dao.UserDaoImplTest
+2017-10-27 16:45:44.971  INFO 17698 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-10-27 16:45:44.973  INFO 17698 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2017-10-27 16:45:44.973  INFO 17698 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@63e1b7cd, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6fd13bc5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@44ff2267, org.springframework.test.context.transaction.TransactionalTestExecutionListener@748f684, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6979667f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@f106786, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@32c18019, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@72fdbc13, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@509566ad, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5cb5176e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@62ca95a9]
+2017-10-27 16:45:44.976  INFO 17698 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1c1b6ad3: startup date [Fri Oct 27 16:45:44 CEST 2017]; root of context hierarchy
+2017-10-27 16:45:44.976  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:44.977  INFO 17698 --- [    Test worker] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.8.RELEASE)
+
+2017-10-27 16:45:45.008  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : Starting UserDaoImplTest with PID 17698 (started by mateusz in /home/mateusz/Projekt/test)
+2017-10-27 16:45:45.008  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : The following profiles are active: test
+2017-10-27 16:45:45.009  INFO 17698 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1d3ce272: startup date [Fri Oct 27 16:45:45 CEST 2017]; root of context hierarchy
+2017-10-27 16:45:45.130  WARN 17698 --- [    Test worker] o.h.v.m.ParameterMessageInterpolator     : HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-27 16:45:45.188  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:45.188  INFO 17698 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-27 16:45:45.192  INFO 17698 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-10-27 16:45:45.202  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:45.202  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:45.202  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:45.225  INFO 17698 --- [    Test worker] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5eb39aa3'
+2017-10-27 16:45:45.225  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:45.236  WARN 17698 --- [    Test worker] o.h.v.m.ParameterMessageInterpolator     : HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-27 16:45:45.283  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : Started UserDaoImplTest in 0.301 seconds (JVM running for 8.326)
+2017-10-27 16:45:45.342  INFO 17698 --- [    Test worker] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-10-27 16:45:45.359  INFO 17698 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1d3ce272: startup date [Fri Oct 27 16:45:45 CEST 2017]; root of context hierarchy
+2017-10-27 16:45:45.360  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:45.360  INFO 17698 --- [    Test worker] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.8.RELEASE)
+
+2017-10-27 16:45:45.397  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : Starting UserDaoImplTest with PID 17698 (started by mateusz in /home/mateusz/Projekt/test)
+2017-10-27 16:45:45.397  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : The following profiles are active: test
+2017-10-27 16:45:45.398  INFO 17698 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6c7e0e1: startup date [Fri Oct 27 16:45:45 CEST 2017]; root of context hierarchy
+2017-10-27 16:45:45.500  WARN 17698 --- [    Test worker] o.h.v.m.ParameterMessageInterpolator     : HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-27 16:45:45.552  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:45.552  INFO 17698 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-27 16:45:45.555  INFO 17698 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-10-27 16:45:45.561  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:45.561  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:45.562  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:45.577  INFO 17698 --- [    Test worker] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5eb39aa3'
+2017-10-27 16:45:45.577  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:45.585  WARN 17698 --- [    Test worker] o.h.v.m.ParameterMessageInterpolator     : HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-27 16:45:45.631  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : Started UserDaoImplTest in 0.264 seconds (JVM running for 8.674)
+2017-10-27 16:45:45.638  INFO 17698 --- [    Test worker] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-10-27 16:45:45.650  INFO 17698 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@6c7e0e1: startup date [Fri Oct 27 16:45:45 CEST 2017]; root of context hierarchy
+2017-10-27 16:45:45.651  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:45.651  INFO 17698 --- [    Test worker] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.8.RELEASE)
+
+2017-10-27 16:45:45.677  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : Starting UserDaoImplTest with PID 17698 (started by mateusz in /home/mateusz/Projekt/test)
+2017-10-27 16:45:45.677  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : The following profiles are active: test
+2017-10-27 16:45:45.678  INFO 17698 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6d9b9c10: startup date [Fri Oct 27 16:45:45 CEST 2017]; root of context hierarchy
+2017-10-27 16:45:45.783  WARN 17698 --- [    Test worker] o.h.v.m.ParameterMessageInterpolator     : HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-27 16:45:45.835  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:45.835  INFO 17698 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-27 16:45:45.838  INFO 17698 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-10-27 16:45:45.844  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:45.844  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:45.844  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:45.858  INFO 17698 --- [    Test worker] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5eb39aa3'
+2017-10-27 16:45:45.858  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:45.866  WARN 17698 --- [    Test worker] o.h.v.m.ParameterMessageInterpolator     : HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-27 16:45:45.910  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : Started UserDaoImplTest in 0.254 seconds (JVM running for 8.953)
+2017-10-27 16:45:45.916  INFO 17698 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@6d9b9c10: startup date [Fri Oct 27 16:45:45 CEST 2017]; root of context hierarchy
+2017-10-27 16:45:45.917  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:45.917  INFO 17698 --- [    Test worker] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.8.RELEASE)
+
+2017-10-27 16:45:45.944  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : Starting UserDaoImplTest with PID 17698 (started by mateusz in /home/mateusz/Projekt/test)
+2017-10-27 16:45:45.944  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : The following profiles are active: test
+2017-10-27 16:45:45.945  INFO 17698 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@630a56ef: startup date [Fri Oct 27 16:45:45 CEST 2017]; root of context hierarchy
+2017-10-27 16:45:46.048  WARN 17698 --- [    Test worker] o.h.v.m.ParameterMessageInterpolator     : HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-27 16:45:46.101  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:46.101  INFO 17698 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-27 16:45:46.104  INFO 17698 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-10-27 16:45:46.110  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:46.110  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:46.110  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:46.125  INFO 17698 --- [    Test worker] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5eb39aa3'
+2017-10-27 16:45:46.125  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:46.133  WARN 17698 --- [    Test worker] o.h.v.m.ParameterMessageInterpolator     : HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-27 16:45:46.180  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : Started UserDaoImplTest in 0.259 seconds (JVM running for 9.223)
+2017-10-27 16:45:46.187  INFO 17698 --- [    Test worker] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-10-27 16:45:46.192  INFO 17698 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@630a56ef: startup date [Fri Oct 27 16:45:45 CEST 2017]; root of context hierarchy
+2017-10-27 16:45:46.193  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:46.193  INFO 17698 --- [    Test worker] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.8.RELEASE)
+
+2017-10-27 16:45:46.225  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : Starting UserDaoImplTest with PID 17698 (started by mateusz in /home/mateusz/Projekt/test)
+2017-10-27 16:45:46.225  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : The following profiles are active: test
+2017-10-27 16:45:46.226  INFO 17698 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@38a2d403: startup date [Fri Oct 27 16:45:46 CEST 2017]; root of context hierarchy
+2017-10-27 16:45:46.360  WARN 17698 --- [    Test worker] o.h.v.m.ParameterMessageInterpolator     : HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-27 16:45:46.423  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:46.423  INFO 17698 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-27 16:45:46.428  INFO 17698 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-10-27 16:45:46.434  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:46.435  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:46.435  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:46.460  INFO 17698 --- [    Test worker] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5eb39aa3'
+2017-10-27 16:45:46.460  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:46.472  WARN 17698 --- [    Test worker] o.h.v.m.ParameterMessageInterpolator     : HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-27 16:45:46.525  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : Started UserDaoImplTest in 0.326 seconds (JVM running for 9.569)
+2017-10-27 16:45:46.532  INFO 17698 --- [    Test worker] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-10-27 16:45:46.537  INFO 17698 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@38a2d403: startup date [Fri Oct 27 16:45:46 CEST 2017]; root of context hierarchy
+2017-10-27 16:45:46.538  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:46.538  INFO 17698 --- [    Test worker] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.8.RELEASE)
+
+2017-10-27 16:45:46.567  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : Starting UserDaoImplTest with PID 17698 (started by mateusz in /home/mateusz/Projekt/test)
+2017-10-27 16:45:46.568  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : The following profiles are active: test
+2017-10-27 16:45:46.569  INFO 17698 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6d36c06b: startup date [Fri Oct 27 16:45:46 CEST 2017]; root of context hierarchy
+2017-10-27 16:45:46.687  WARN 17698 --- [    Test worker] o.h.v.m.ParameterMessageInterpolator     : HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-27 16:45:46.743  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:46.743  INFO 17698 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-27 16:45:46.746  INFO 17698 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-10-27 16:45:46.753  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:46.753  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:46.753  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:46.770  INFO 17698 --- [    Test worker] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5eb39aa3'
+2017-10-27 16:45:46.771  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:46.780  WARN 17698 --- [    Test worker] o.h.v.m.ParameterMessageInterpolator     : HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-27 16:45:46.824  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : Started UserDaoImplTest in 0.28 seconds (JVM running for 9.867)
+2017-10-27 16:45:46.830  INFO 17698 --- [    Test worker] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-10-27 16:45:46.837  INFO 17698 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@6d36c06b: startup date [Fri Oct 27 16:45:46 CEST 2017]; root of context hierarchy
+2017-10-27 16:45:46.838  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:46.838  INFO 17698 --- [    Test worker] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.8.RELEASE)
+
+2017-10-27 16:45:46.867  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : Starting UserDaoImplTest with PID 17698 (started by mateusz in /home/mateusz/Projekt/test)
+2017-10-27 16:45:46.868  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : The following profiles are active: test
+2017-10-27 16:45:46.869  INFO 17698 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@185948c6: startup date [Fri Oct 27 16:45:46 CEST 2017]; root of context hierarchy
+2017-10-27 16:45:46.983  WARN 17698 --- [    Test worker] o.h.v.m.ParameterMessageInterpolator     : HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-27 16:45:47.039  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:47.039  INFO 17698 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-27 16:45:47.044  INFO 17698 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-10-27 16:45:47.053  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:47.053  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:47.053  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:47.074  INFO 17698 --- [    Test worker] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5eb39aa3'
+2017-10-27 16:45:47.075  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:47.084  WARN 17698 --- [    Test worker] o.h.v.m.ParameterMessageInterpolator     : HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-27 16:45:47.128  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : Started UserDaoImplTest in 0.285 seconds (JVM running for 10.171)
+2017-10-27 16:45:47.133  INFO 17698 --- [    Test worker] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-10-27 16:45:47.139  INFO 17698 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@185948c6: startup date [Fri Oct 27 16:45:46 CEST 2017]; root of context hierarchy
+2017-10-27 16:45:47.139  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:47.139  INFO 17698 --- [    Test worker] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.8.RELEASE)
+
+2017-10-27 16:45:47.170  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : Starting UserDaoImplTest with PID 17698 (started by mateusz in /home/mateusz/Projekt/test)
+2017-10-27 16:45:47.170  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : The following profiles are active: test
+2017-10-27 16:45:47.172  INFO 17698 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@27afc4c8: startup date [Fri Oct 27 16:45:47 CEST 2017]; root of context hierarchy
+2017-10-27 16:45:47.282  WARN 17698 --- [    Test worker] o.h.v.m.ParameterMessageInterpolator     : HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-27 16:45:47.341  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:47.342  INFO 17698 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-27 16:45:47.346  INFO 17698 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-10-27 16:45:47.354  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:47.354  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:47.355  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:47.373  INFO 17698 --- [    Test worker] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5eb39aa3'
+2017-10-27 16:45:47.373  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:47.383  WARN 17698 --- [    Test worker] o.h.v.m.ParameterMessageInterpolator     : HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-27 16:45:47.443  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : Started UserDaoImplTest in 0.298 seconds (JVM running for 10.486)
+2017-10-27 16:45:47.451  INFO 17698 --- [    Test worker] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-10-27 16:45:47.458  INFO 17698 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@27afc4c8: startup date [Fri Oct 27 16:45:47 CEST 2017]; root of context hierarchy
+2017-10-27 16:45:47.459  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:47.459  INFO 17698 --- [    Test worker] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.8.RELEASE)
+
+2017-10-27 16:45:47.498  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : Starting UserDaoImplTest with PID 17698 (started by mateusz in /home/mateusz/Projekt/test)
+2017-10-27 16:45:47.498  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : The following profiles are active: test
+2017-10-27 16:45:47.500  INFO 17698 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4fb56e85: startup date [Fri Oct 27 16:45:47 CEST 2017]; root of context hierarchy
+2017-10-27 16:45:47.656  WARN 17698 --- [    Test worker] o.h.v.m.ParameterMessageInterpolator     : HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-27 16:45:47.749  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:47.749  INFO 17698 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-27 16:45:47.754  INFO 17698 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-10-27 16:45:47.762  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:47.762  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:47.762  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:47.781  INFO 17698 --- [    Test worker] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5eb39aa3'
+2017-10-27 16:45:47.782  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:47.794  WARN 17698 --- [    Test worker] o.h.v.m.ParameterMessageInterpolator     : HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-27 16:45:47.845  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : Started UserDaoImplTest in 0.38 seconds (JVM running for 10.889)
+2017-10-27 16:45:47.848  INFO 17698 --- [    Test worker] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-10-27 16:45:47.852  INFO 17698 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@4fb56e85: startup date [Fri Oct 27 16:45:47 CEST 2017]; root of context hierarchy
+2017-10-27 16:45:47.853  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:47.853  INFO 17698 --- [    Test worker] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.8.RELEASE)
+
+2017-10-27 16:45:47.884  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : Starting UserDaoImplTest with PID 17698 (started by mateusz in /home/mateusz/Projekt/test)
+2017-10-27 16:45:47.884  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : The following profiles are active: test
+2017-10-27 16:45:47.885  INFO 17698 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@556aafce: startup date [Fri Oct 27 16:45:47 CEST 2017]; root of context hierarchy
+2017-10-27 16:45:48.000  WARN 17698 --- [    Test worker] o.h.v.m.ParameterMessageInterpolator     : HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-27 16:45:48.057  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:48.057  INFO 17698 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-27 16:45:48.061  INFO 17698 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-10-27 16:45:48.069  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:48.069  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:48.069  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:48.088  INFO 17698 --- [    Test worker] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5eb39aa3'
+2017-10-27 16:45:48.089  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:48.102  WARN 17698 --- [    Test worker] o.h.v.m.ParameterMessageInterpolator     : HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-27 16:45:48.148  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : Started UserDaoImplTest in 0.291 seconds (JVM running for 11.191)
+2017-10-27 16:45:48.155  INFO 17698 --- [    Test worker] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-10-27 16:45:48.163  INFO 17698 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@556aafce: startup date [Fri Oct 27 16:45:47 CEST 2017]; root of context hierarchy
+2017-10-27 16:45:48.163  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:48.164  INFO 17698 --- [    Test worker] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.8.RELEASE)
+
+2017-10-27 16:45:48.200  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : Starting UserDaoImplTest with PID 17698 (started by mateusz in /home/mateusz/Projekt/test)
+2017-10-27 16:45:48.200  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : The following profiles are active: test
+2017-10-27 16:45:48.201  INFO 17698 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@290569d5: startup date [Fri Oct 27 16:45:48 CEST 2017]; root of context hierarchy
+2017-10-27 16:45:48.315  WARN 17698 --- [    Test worker] o.h.v.m.ParameterMessageInterpolator     : HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-27 16:45:48.373  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:48.373  INFO 17698 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-27 16:45:48.378  INFO 17698 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-10-27 16:45:48.386  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:48.386  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:48.386  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:48.404  INFO 17698 --- [    Test worker] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5eb39aa3'
+2017-10-27 16:45:48.404  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:48.416  WARN 17698 --- [    Test worker] o.h.v.m.ParameterMessageInterpolator     : HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-27 16:45:48.457  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : Started UserDaoImplTest in 0.288 seconds (JVM running for 11.501)
+2017-10-27 16:45:48.464  INFO 17698 --- [    Test worker] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-10-27 16:45:48.470  INFO 17698 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@290569d5: startup date [Fri Oct 27 16:45:48 CEST 2017]; root of context hierarchy
+2017-10-27 16:45:48.471  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:48.471  INFO 17698 --- [    Test worker] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.8.RELEASE)
+
+2017-10-27 16:45:48.500  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : Starting UserDaoImplTest with PID 17698 (started by mateusz in /home/mateusz/Projekt/test)
+2017-10-27 16:45:48.500  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : The following profiles are active: test
+2017-10-27 16:45:48.501  INFO 17698 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6741204a: startup date [Fri Oct 27 16:45:48 CEST 2017]; root of context hierarchy
+2017-10-27 16:45:48.608  WARN 17698 --- [    Test worker] o.h.v.m.ParameterMessageInterpolator     : HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-27 16:45:48.661  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:48.661  INFO 17698 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-27 16:45:48.665  INFO 17698 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-10-27 16:45:48.672  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:48.672  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:48.672  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:48.687  INFO 17698 --- [    Test worker] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5eb39aa3'
+2017-10-27 16:45:48.688  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:48.697  WARN 17698 --- [    Test worker] o.h.v.m.ParameterMessageInterpolator     : HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-27 16:45:48.736  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : Started UserDaoImplTest in 0.259 seconds (JVM running for 11.779)
+2017-10-27 16:45:48.746  INFO 17698 --- [    Test worker] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-10-27 16:45:48.752  INFO 17698 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@6741204a: startup date [Fri Oct 27 16:45:48 CEST 2017]; root of context hierarchy
+2017-10-27 16:45:48.753  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:48.753  INFO 17698 --- [    Test worker] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.8.RELEASE)
+
+2017-10-27 16:45:48.784  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : Starting UserDaoImplTest with PID 17698 (started by mateusz in /home/mateusz/Projekt/test)
+2017-10-27 16:45:48.784  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : The following profiles are active: test
+2017-10-27 16:45:48.785  INFO 17698 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@40fa309: startup date [Fri Oct 27 16:45:48 CEST 2017]; root of context hierarchy
+2017-10-27 16:45:48.890  WARN 17698 --- [    Test worker] o.h.v.m.ParameterMessageInterpolator     : HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-27 16:45:48.943  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:48.943  INFO 17698 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-27 16:45:48.948  INFO 17698 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-10-27 16:45:48.954  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:48.955  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:48.955  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:48.972  INFO 17698 --- [    Test worker] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5eb39aa3'
+2017-10-27 16:45:48.973  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:48.982  WARN 17698 --- [    Test worker] o.h.v.m.ParameterMessageInterpolator     : HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-27 16:45:49.023  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : Started UserDaoImplTest in 0.265 seconds (JVM running for 12.066)
+2017-10-27 16:45:49.029  INFO 17698 --- [    Test worker] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-10-27 16:45:49.037  INFO 17698 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@40fa309: startup date [Fri Oct 27 16:45:48 CEST 2017]; root of context hierarchy
+2017-10-27 16:45:49.038  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:49.038  INFO 17698 --- [    Test worker] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.8.RELEASE)
+
+2017-10-27 16:45:49.065  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : Starting UserDaoImplTest with PID 17698 (started by mateusz in /home/mateusz/Projekt/test)
+2017-10-27 16:45:49.065  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : The following profiles are active: test
+2017-10-27 16:45:49.066  INFO 17698 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7089399b: startup date [Fri Oct 27 16:45:49 CEST 2017]; root of context hierarchy
+2017-10-27 16:45:49.172  WARN 17698 --- [    Test worker] o.h.v.m.ParameterMessageInterpolator     : HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-27 16:45:49.240  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:49.241  INFO 17698 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-27 16:45:49.245  INFO 17698 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-10-27 16:45:49.252  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:49.252  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:49.253  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:49.269  INFO 17698 --- [    Test worker] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5eb39aa3'
+2017-10-27 16:45:49.269  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:49.281  WARN 17698 --- [    Test worker] o.h.v.m.ParameterMessageInterpolator     : HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-27 16:45:49.340  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : Started UserDaoImplTest in 0.298 seconds (JVM running for 12.383)
+2017-10-27 16:45:49.346  INFO 17698 --- [    Test worker] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-10-27 16:45:49.353  INFO 17698 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@7089399b: startup date [Fri Oct 27 16:45:49 CEST 2017]; root of context hierarchy
+2017-10-27 16:45:49.353  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:49.354  INFO 17698 --- [    Test worker] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.8.RELEASE)
+
+2017-10-27 16:45:49.386  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : Starting UserDaoImplTest with PID 17698 (started by mateusz in /home/mateusz/Projekt/test)
+2017-10-27 16:45:49.386  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : The following profiles are active: test
+2017-10-27 16:45:49.388  INFO 17698 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7b46bd39: startup date [Fri Oct 27 16:45:49 CEST 2017]; root of context hierarchy
+2017-10-27 16:45:49.483  WARN 17698 --- [    Test worker] o.h.v.m.ParameterMessageInterpolator     : HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-27 16:45:49.531  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:49.531  INFO 17698 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-27 16:45:49.535  INFO 17698 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-10-27 16:45:49.541  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:49.541  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:49.541  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:49.557  INFO 17698 --- [    Test worker] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5eb39aa3'
+2017-10-27 16:45:49.557  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:49.568  WARN 17698 --- [    Test worker] o.h.v.m.ParameterMessageInterpolator     : HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-27 16:45:49.610  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : Started UserDaoImplTest in 0.251 seconds (JVM running for 12.653)
+2017-10-27 16:45:49.615  INFO 17698 --- [    Test worker] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-10-27 16:45:49.621  INFO 17698 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@7b46bd39: startup date [Fri Oct 27 16:45:49 CEST 2017]; root of context hierarchy
+2017-10-27 16:45:49.622  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:49.622  INFO 17698 --- [    Test worker] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.8.RELEASE)
+
+2017-10-27 16:45:49.650  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : Starting UserDaoImplTest with PID 17698 (started by mateusz in /home/mateusz/Projekt/test)
+2017-10-27 16:45:49.650  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : The following profiles are active: test
+2017-10-27 16:45:49.652  INFO 17698 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6f4538b8: startup date [Fri Oct 27 16:45:49 CEST 2017]; root of context hierarchy
+2017-10-27 16:45:49.777  WARN 17698 --- [    Test worker] o.h.v.m.ParameterMessageInterpolator     : HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-27 16:45:49.845  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:49.845  INFO 17698 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-27 16:45:49.848  INFO 17698 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-10-27 16:45:49.854  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:49.854  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:49.854  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:49.868  INFO 17698 --- [    Test worker] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5eb39aa3'
+2017-10-27 16:45:49.869  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:49.877  WARN 17698 --- [    Test worker] o.h.v.m.ParameterMessageInterpolator     : HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-27 16:45:49.915  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : Started UserDaoImplTest in 0.288 seconds (JVM running for 12.959)
+2017-10-27 16:45:49.922  INFO 17698 --- [    Test worker] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-10-27 16:45:49.928  INFO 17698 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@6f4538b8: startup date [Fri Oct 27 16:45:49 CEST 2017]; root of context hierarchy
+2017-10-27 16:45:49.928  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:49.928  INFO 17698 --- [    Test worker] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.8.RELEASE)
+
+2017-10-27 16:45:49.958  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : Starting UserDaoImplTest with PID 17698 (started by mateusz in /home/mateusz/Projekt/test)
+2017-10-27 16:45:49.958  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : The following profiles are active: test
+2017-10-27 16:45:49.960  INFO 17698 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@33a130e2: startup date [Fri Oct 27 16:45:49 CEST 2017]; root of context hierarchy
+2017-10-27 16:45:50.057  WARN 17698 --- [    Test worker] o.h.v.m.ParameterMessageInterpolator     : HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-27 16:45:50.104  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:50.104  INFO 17698 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-27 16:45:50.107  INFO 17698 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-10-27 16:45:50.112  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:50.112  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:50.112  WARN 17698 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-27 16:45:50.123  INFO 17698 --- [    Test worker] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5eb39aa3'
+2017-10-27 16:45:50.123  INFO 17698 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-10-27 16:45:50.131  WARN 17698 --- [    Test worker] o.h.v.m.ParameterMessageInterpolator     : HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-27 16:45:50.170  INFO 17698 --- [    Test worker] com.example.dao.UserDaoImplTest          : Started UserDaoImplTest in 0.236 seconds (JVM running for 13.213)
+2017-10-27 16:45:50.176  INFO 17698 --- [    Test worker] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.2.1</a> at 2017-10-27 16:45:55</p>
+</div>
+</div>
+</body>
+</html>
